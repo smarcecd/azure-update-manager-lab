@@ -122,7 +122,7 @@ azure-update-manager-lab/
 
 ## 🚀 Deployment Guide
 
-### Step 1 — Clone This Repository to Your Project Folder
+### 📥 Step 1 — Clone This Repository to Your Project Folder
 
 ```powershell
 git clone https://github.com/smarcecd/azure-update-manager-lab.git
