@@ -84,6 +84,41 @@ Terraform installation guide:
 
 ---
 
+## 📂 Project Structure
+
+
+This lab uses a modular Terraform layout, where networking, compute, Key Vault, and Update Manager are organized into separate modules. The root directory holds the main Terraform configuration, while all reusable components live under modules/. Automation and validation scripts are stored in scripts/. This structure keeps the project organized, scalable, and easy to maintain.
+
+```powershell
+azure-update-manager-lab/
+├── backend.tf                         ← Remote state configuration (Azure Storage)
+├── versions.tf                        ← Provider version requirements (azurerm + random)
+├── variables.tf                       ← All input variables for the lab
+├── main.tf                            ← Root module wiring all 4 child modules
+├── outputs.tf                         ← VM public IPs and Key Vault name
+├── terraform.tfvars.example           ← Safe template for variables (commit this)
+├── terraform.tfvars                   ← Your real values (never commit this)
+├── .gitignore                         ← Ignore state files, secrets, and reports
+│
+├── modules/
+│   ├── networking/
+│   │   └── main.tf                    ← VNet, subnet, NSG, subnet–NSG association
+│   │
+│   ├── keyvault/
+│   │   └── main.tf                    ← Key Vault (RBAC model) + admin password secret
+│   │
+│   ├── compute/
+│   │   └── main.tf                    ← 3 VMs, domain promotion, domain join extensions
+│   │
+│   └── update-manager/
+│       └── main.tf                    ← Azure Policy + Maintenance Config + 3 VM assignments
+│
+└── scripts/
+    └── validate-lab.ps1               ← Compliance validation + JSON report export
+```powershell
+
+---
+
 
 ## 🚀 Deployment Guide
 
