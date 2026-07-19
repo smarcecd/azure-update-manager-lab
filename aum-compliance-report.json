@@ -1,0 +1,33 @@
+﻿{
+    "ResourceGroup":  "rg-aumlab",
+    "VMs":  [
+                {
+                    "VMName":  "DC01",
+                    "AssessmentStatus":  null,
+                    "CriticalAndSecurityCount":  null,
+                    "OtherPatchCount":  null,
+                    "LastAssessmentTime":  null,
+                    "Compliant":  false,
+                    "Result":  "FAIL"
+                },
+                {
+                    "VMName":  "WS01",
+                    "AssessmentStatus":  null,
+                    "CriticalAndSecurityCount":  null,
+                    "OtherPatchCount":  null,
+                    "LastAssessmentTime":  null,
+                    "Compliant":  false,
+                    "Result":  "FAIL"
+                },
+                {
+                    "VMName":  "WS02",
+                    "AssessmentStatus":  null,
+                    "CriticalAndSecurityCount":  null,
+                    "OtherPatchCount":  null,
+                    "LastAssessmentTime":  null,
+                    "Compliant":  false,
+                    "Result":  "FAIL"
+                }
+            ],
+    "GeneratedAt":  "2026-07-19T16:49:38.0994514-04:00"
+}
