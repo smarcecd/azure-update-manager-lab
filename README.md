@@ -115,7 +115,7 @@ azure-update-manager-lab/
 │
 └── scripts/
     └── validate-lab.ps1               ← Compliance validation + JSON report export
-```powershell
+```
 
 ---
 
