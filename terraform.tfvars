@@ -1,7 +1,7 @@
 location            = "eastus"
 resource_group_name = "rg-aumlab"
 admin_username      = "labadmin"
-allowed_rdp_ip      = "107.141.51.139/32" # find at whatismyip.com — format: 1.2.3.4/32
+allowed_rdp_ip      = "YOUR_PUBLIC_IP/32" # find at whatismyip.com — format: 1.2.3.4/32
 domain_name         = "aumlab.local"
 domain_netbios      = "AUMLAB"
 
