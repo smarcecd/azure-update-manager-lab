@@ -243,7 +243,8 @@ Assessment takes 5–10 minutes per VM.
  🔹 Validate assessment results
 
 ```powershell
-pwsh ./scripts/validate-lab.ps1 -ResourceGroup "rg-aumlab" -SubscriptionId $subId
+powershell -ExecutionPolicy Bypass -File ./scripts/validate-lab.ps1 -ResourceGroup "rg-aumlab" -SubscriptionId $subId
+
 ```
 
  🔹 Expected behavior
