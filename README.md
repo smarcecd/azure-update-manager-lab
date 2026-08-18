@@ -11,6 +11,11 @@
 
 A complete, production‑style Azure Update Manager lab built with modular Terraform, Azure Policy, and PowerShell 7. This lab deploys three Windows Server 2022 VMs, auto‑enrolls them into Update Manager, configures a weekly maintenance window, triggers on‑demand patch assessments, and exports a compliance report.
 
+Watch me doing this lab here:
+
+[![AUM_LAB](https://github.com/user-attachments/assets/6574d388-5ced-45ba-a762-abd0469d0467)](https://www.loom.com/share/ff770f9bc3574b0a9b35f5541827fc21)
+
+
 ---
 
 ## 🔗 Lab Overview
