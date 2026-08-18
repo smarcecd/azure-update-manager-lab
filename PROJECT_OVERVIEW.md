@@ -3,11 +3,6 @@
 
 Active Directory · Terraform · PowerShell · Azure Policy
 
-https://img.shields.io/badge/Terraform-v1.5+-7B42BC?logo=terraform&logoColor=white  
-https://img.shields.io/badge/AzureRM_Provider-3.x-0078D4?logo=microsoftazure&logoColor=white  
-https://img.shields.io/badge/PowerShell-7+-5391FE?logo=powershell&logoColor=white  
-https://img.shields.io/badge/Windows_Server-2022-0078D4?logo=windows&logoColor=white  
-https://img.shields.io/badge/Lab_Status-Completed-brightgreen
 
 A production‑grade Azure Update Manager lab built with modular Terraform, Azure Policy, and PowerShell 7.
 This environment deploys three Windows Server 2022 VMs, automatically enrolls them into Azure Update Manager, configures a weekly maintenance window, triggers on‑demand patch assessments, and exports a structured compliance report.
